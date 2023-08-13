@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/background-dados.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+main h1 {
+    text-align: center;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+#id_user {
+    text-align: center;
+}
+
+td#update, td#delete {
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    transition: .3s ease-in;
+}
+
+table .tbIcon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+table #update:hover {
+    color: green;
+    transform: scale(1.2);
+}
+
+table #delete:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+#actions {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+}
+
+#actions #btnCad {
+    margin-top: auto;
+    width: 35%;
+    height: 8vh;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform .2s ease-in;
+}
+
+#actions #btnCad:hover {
+    transform: scale(1.1);
+}
+
+#actions #btnCad:active {
+    transform: scale(0.9);
+}
